@@ -1,0 +1,213 @@
+<div class="top-announcement-bar"></div>
+<header class="main-header">
+  <div class="header-left">
+    <div class="location-container">
+      <i class="fa-solid fa-location-dot geo-icon"></i>
+      <div>
+        <span class="loc-title">Dirección de envió</span>
+        <span class="loc-city">Ica, Perú</span>
+      </div>
+    </div>
+  </div>
+  
+  <div class="header-center">
+    <h1 class="brand-title">ATELIER</h1>
+    <span class="brand-subtitle">FLORERÍA</span>
+  </div>
+  
+  <div class="header-right">
+    <div class="search-box">
+      <i class="fa-solid fa-magnifying-glass search-icon"></i>
+      <input type="text" placeholder="Buscar">
+    </div>
+    <div class="user-actions">
+      <i class="fa-regular fa-user action-icon"></i>
+      <i class="fa-solid fa-cart-shopping action-icon" onclick="switchPage('carrito')"></i>
+    </div>
+  </div>
+</header>
+
+<nav class="sub-navbar">
+  <button class="menu-hamburger-btn"><i class="fa-solid fa-bars"></i> Menú</button>
+  <div class="nav-links">
+    <button class="nav-btn" onclick="switchPage('nosotras')">Nosotras</button>
+    <button class="nav-btn active" onclick="switchPage('principal')">Principal</button>
+    <button class="nav-btn" onclick="switchPage('detalles')">Detalles</button>
+    <button class="nav-btn" onclick="switchPage('boxes')">Boxes</button>
+    <button class="nav-btn" onclick="switchPage('san-valentin')">San Valentín</button>
+  </div>
+  <button class="promo-btn">Promociones</button>
+</nav>
+
+<main id="content-area">
+
+  <section id="page-principal" class="web-page active">
+    <div class="hero-container-grid">
+      <div class="main-hero-banner">
+        <div class="hero-text-side">
+          <h2>Arreglos</h2>
+          <h3>para cada ocasión</h3>
+          <button class="hero-action-btn">Descubre más aquí</button>
+        </div>
+        <div class="hero-image-side">
+          <img src="https://images.unsplash.com/photo-1587334206506-ee21e3f70615?q=80&w=600" alt="Arreglo Principal">
+        </div>
+        <button class="slider-arrow arrow-left">‹</button>
+        <button class="slider-arrow arrow-right">›</button>
+      </div>
+      <div class="side-hero-banner">
+        <img src="https://images.unsplash.com/photo-1518709268805-4e9042af9f23?q=80&w=400" alt="Ramo Lateral">
+      </div>
+    </div>
+
+    <h2 class="section-heading-title">Tenemos arreglos para todas las ocasiones</h2>
+    
+    <div class="circle-categories-container">
+      <div class="category-circle-item" onclick="switchPage('san-valentin')">
+        <div class="circle-wrapper"><img src="https://images.unsplash.com/photo-1526047932273-341f2a7631f9?q=80&w=200"></div>
+        <span>Amor</span>
+      </div>
+      <div class="category-circle-item" onclick="switchPage('boxes')">
+        <div class="circle-wrapper"><img src="https://images.unsplash.com/photo-1561181286-d3fee7d55364?q=80&w=200"></div>
+        <span>Aniversarios</span>
+      </div>
+      <div class="category-circle-item" onclick="switchPage('boxes')">
+        <div class="circle-wrapper"><img src="https://images.unsplash.com/photo-1596436889106-be35e843f974?q=80&w=200"></div>
+        <span>Arreglos</span>
+      </div>
+      <div class="category-circle-item" onclick="switchPage('detalles')">
+        <div class="circle-wrapper"><img src="https://images.unsplash.com/photo-1525310072745-f49212b5ac6d?q=80&w=200"></div>
+        <span>Graduaciones</span>
+      </div>
+      <div class="category-circle-item" onclick="switchPage('detalles')">
+        <div class="circle-wrapper"><img src="https://images.unsplash.com/photo-1562594244-44a77aa95909?q=80&w=200"></div>
+        <span>Detalles</span>
+      </div>
+    </div>
+
+    <div class="products-showcase-grid">
+      <div class="flower-product-card">
+        <div class="card-img-container"><img src="https://images.unsplash.com/photo-1587334206506-ee21e3f70615?q=80&w=400"></div>
+        <h4>Arreglo Adriana</h4>
+        <p class="card-price">S/. 180.00</p>
+        <button class="add-to-cart-btn">Agregar al carrito</button>
+      </div>
+      <div class="flower-product-card">
+        <div class="card-img-container"><img src="https://images.unsplash.com/photo-1518709268805-4e9042af9f23?q=80&w=400"></div>
+        <h4>Ramo Temático</h4>
+        <p class="card-price">S/. 105.00</p>
+        <button class="add-to-cart-btn">Agregar al carrito</button>
+      </div>
+      <div class="flower-product-card">
+        <div class="card-img-container"><img src="https://images.unsplash.com/photo-1596436889106-be35e843f974?q=80&w=400"></div>
+        <h4>Box Lovely</h4>
+        <p class="card-price">S/. 230.00</p>
+        <button class="add-to-cart-btn">Agregar al carrito</button>
+      </div>
+      <div class="promo-banner-card-ad">
+        <h3>¡Ya disponible!</h3>
+        <p>Flores llenas de vida para sorprender con amor</p>
+        <button class="promo-buy-btn" onclick="switchPage('san-valentin')">Separa el tuyo</button>
+      </div>
+    </div>
+
+    <div class="newsletter-subscription-box">
+      <h3>Suscríbete a nuestro boletín</h3>
+      <p>Recibe nuestros correos y sé el primero en enterarte de nuestras ofertas exclusivas promocionales y mucho más</p>
+      <input type="email" class="news-input-field" placeholder="">
+      <input type="text" class="news-input-field" placeholder="">
+    </div>
+  </section>
+
+  <section id="page-nosotras" class="web-page">
+    <div class="about-us-hero-layout">
+      <div class="about-photo-frame">
+        <img src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?q=80&w=500" alt="Nosotras Atelier">
+      </div>
+      <div class="about-editorial-text">
+        <h2>Un lienzo vivo</h2>
+        <p>Somos dos mujeres creativas unidas por el amor a las flores y al detalle. En Atelier Florería creemos que cada arreglo es una forma de expresión: un mensaje, una emoción, un momento que merece ser recordado. Trabajamos de manera cercana, cuidando cada proceso de forma artesanal, combinando sensibilidad estética, dedicación y respeto por la naturaleza. Para nosotras, crear con flores es un acto de intención y significado.</p>
+      </div>
+    </div>
+
+    <div class="organizational-values-container">
+      <div class="value-row-block">
+        <div class="cloud-flower-shape-title">Misión</div>
+        <p>Crear experiencias florales que transmitan emociones genuinas, a través de diseños personalizados, hechos con sensibilidad, estética y amor por lo artesanal.</p>
+      </div>
+      <div class="value-row-block reverse-layout">
+        <p>Ser una florería reconocida por su identidad, calidez y diseño, conectando con personas que valoran los detalles, lo hecho con intención y la belleza en su forma más natural.</p>
+        <div class="cloud-flower-shape-title">Visión</div>
+      </div>
+    </div>
+  </section>
+
+  <section id="page-detalles" class="web-page">
+    <div class="category-intro-banner-strip">
+      <h2>Detalles</h2>
+    </div>
+    <p class="category-description-text">En Atelier, descubre nuestros detalles para parejas, familia u ocasiones importantes, encuentra el obsequio que hará el momento aun más especial.</p>
+    <div class="products-grid-catalogue" id="detalles-grid-injection"></div>
+  </section>
+
+  <section id="page-boxes" class="web-page">
+    <div class="category-intro-banner-strip text-overlay-bg">
+      <h2>Box</h2>
+    </div>
+    <p class="category-description-text">En Atelier, descubre nuestra exclusiva gama de arreglos florales, ideales para ofrecer un toque de color, fragancia y belleza. Ya sea un cumpleaños, san valentín, bodas, graduaciones, aniversario o simplemente para demostrar todo tu amor y aprecio. Tenemos una amplia variedad de opciones para elegir.</p>
+    <div class="products-grid-catalogue" id="boxes-grid-injection"></div>
+  </section>
+
+  <section id="page-san-valentin" class="web-page">
+    <div class="category-intro-banner-strip san-valentin-bg">
+      <h2>San Valentín</h2>
+    </div>
+    <p class="category-description-text">En Atelier, descubre nuestra exclusiva gama de arreglos florales, ideales para ofrecer un toque de color, fragancia y belleza. Nuestra temporada de San Valentín trae consigo emociones especiales las cuales necesitan de obsequios especiales.</p>
+    <div class="products-grid-catalogue" id="valentin-grid-injection"></div>
+  </section>
+
+  <section id="page-carrito" class="web-page">
+    <h2 class="cart-main-title-label">Carrito de Compras</h2>
+    <div class="cart-items-list-wrapper" id="cart-items-output">
+      </div>
+    <div class="cart-summary-calculations-box">
+      <div class="calc-row"><span>Subtotal</span><span id="summary-subtotal">S/. 418.00</span></div>
+      <div class="calc-row"><span>Envío (descuento)</span><span>S/. 10.00</span></div>
+      <div class="calc-row total-highlight"><span>Total</span><span id="summary-total">S/. 428.00</span></div>
+      <button class="cart-primary-action-btn burgundy-btn">Proceder al pago</button>
+      <button class="cart-primary-action-btn grey-btn" onclick="switchPage('principal')">Seguir comprando</button>
+    </div>
+  </section>
+
+</main>
+
+<footer class="main-brand-footer">
+  <div class="footer-columns-wrapper">
+    <div class="accordion-footer-links">
+      <div class="footer-link-node">Cuenta +</div>
+      <div class="footer-link-node">Políticas +</div>
+      <div class="footer-link-node">Información +</div>
+      <div class="footer-link-node">Formas de pago +</div>
+    </div>
+    
+    <div class="footer-brand-profile-block">
+      <h2 class="footer-logo">ATELIER</h2>
+      <p class="footer-legal-manifesto">Llevamos más de 4 años entregando amor a través de flores y regalos. Cada entrega es única para nosotros; combinamos flores hermosas, diseños exclusivos y una atención cuidada.</p>
+      <div class="social-networks-icons-set">
+        <a href="#"><i class="fa-brands fa-tiktok"></i></a>
+        <a href="#"><i class="fa-brands fa-instagram"></i></a>
+        <a href="#"><i class="fa-brands fa-facebook"></i></a>
+      </div>
+      <div class="footer-sub-links-inline">
+        <a href="#">Política de privacidad</a> | <a href="#">Términos y condiciones</a>
+      </div>
+    </div>
+  </div>
+  
+  <div class="footer-copyright-row">
+    <span>© 2024 Atelier Florería. Todos los derechos reservados.</span>
+    <div class="footer-sub-links-inline">
+      <a href="#">Política de privacidad</a> | <a href="#">Términos y condiciones</a>
+    </div>
+  </div>
+</footer>
